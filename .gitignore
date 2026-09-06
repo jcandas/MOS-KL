@@ -1,0 +1,30 @@
+# ============================================================================
+# Confidential data — DO NOT COMMIT.
+# ADNI (plasma + CSF) data is governed by the ADNI Data Use Agreement, which
+# prohibits redistribution. Raw downloads and the derived binary datasets are
+# excluded; reviewers regenerate them from their own ADNI download (see README).
+# ============================================================================
+# raw downloads (any CSV placed directly in source/data or data)
+source/data/*.csv
+data/*.csv
+# prepared ADNI / CSF binaries produced by PrepADNI.m / PrepCSF.m
+source/data/ADNI_data/
+source/data/CSF_data/
+# private newAD (if present)
+source/data/newAD/
+
+# ============================================================================
+# Generated results — reviewers regenerate these with the reproduce_* commands.
+# ============================================================================
+source/results/
+source/results_semisyn_v2/
+source/results_semisyn_v2_radial/
+source/results_gcm_svm_k*/
+
+# ============================================================================
+# Editor / scheduler / scratch artifacts
+# ============================================================================
+**/*.asv
+**/*.o[0-9]*
+**/*.e[0-9]*
+.DS_Store
